@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "node ./checkversion.js",
+    "//": "Doesn't work on windows",
     "eslint": "# 运行eslint \n    eslint test/index.js",
-    "eslint:fix": "npm run eslint -- --fix"
+    "eslint:fix": "npm run eslint -- --fix",
+    "echo": "cross-var echo $npm_package_name"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +19,7 @@
   },
   "devDependencies": {
     "chalk": "^4.0.0",
+    "cross-var": "^1.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
